@@ -143,7 +143,7 @@ return A
 <pre class="hljs"><code><div>//s is the source vertex
 BFS{G,s) 
     for each u in V
-        u.color - white
+        u.color = white
         u.d = infinity
         u.pi = null
 
@@ -153,7 +153,7 @@ BFS{G,s)
     while Q is not empty
         u = Q.remove()
         for each edge e =(u,v) in Adj[u]
-            if color == white
+            if v.color == white
                 v.pi = u
                 v.d = u.d + 1
                 v.color = grey
@@ -161,5 +161,26 @@ BFS{G,s)
         u.color = black
 </div></code></pre>
 <h2>Depth First Search (DFS)</h2>
+<pre class="hljs"><code><div>DFS(G)
+    for u in V
+        u.color = white
+        u.pi = null
+    time = 0
+    topNum = |v|
+    for u in V
+        if u.color == white
+            DFS_Visit(u)
+
+DFS_Visit(u)
+    u.color = grey
+    u.dis = ++time
+    for each edge e=(u,v) in Adj[u]
+        if v.color == white
+            v.pi = u
+            DFS_Visit(v)
+    u.color = black
+    u.fin = ++time
+    u.top = topNum--
+</div></code></pre>
 
 </body></html>
