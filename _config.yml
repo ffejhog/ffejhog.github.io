@@ -17,5 +17,5 @@ github_username:  ffejhog
 # medium_username: lorem_ipsum
 # medium_url: lorem_ipsum
 # gplus_username:  lorem_ipsum
-
+blog_url: https://blog.jeffreyneer.com
 exclude: ['package.json', 'src' , 'node_modules']
