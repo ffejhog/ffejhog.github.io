@@ -6,9 +6,9 @@ url: "https://jeffreyneer.com"
 
 # User settings
 username: Jeffrey Neer
-user_description: I'm a Software Engineer from Texas. I am currently updating my main landing page. I should have more info here in the coming days.
+user_description: I'm a Software Engineer currently residing in Texas. 
 user_title: Software Engineer
-email: jneer@pm.me
+email: admin@jeffreyneer.com
 # twitter_username: lorem_ipsum
 #instagram_username: lorem_ipsum
 #facebook_username: lorem_ipsum
@@ -18,4 +18,5 @@ github_username:  ffejhog
 # medium_url: lorem_ipsum
 # gplus_username:  lorem_ipsum
 blog_url: https://blog.jeffreyneer.com
+
 exclude: ['package.json', 'src' , 'node_modules']
